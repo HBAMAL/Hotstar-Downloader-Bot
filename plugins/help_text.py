@@ -41,7 +41,7 @@ async def start(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/TELSABOTS")], [InlineKeyboardButton(text="🧑🏼‍💻DEV🧑🏼‍💻", url="https://t.me/ALLUADDICT"),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="📢CHANNEL📢", url="https://t.me/TELSABOTS")], [InlineKeyboardButton(text="🧑🏼‍💻DEV🧑🏼‍💻", url="https://t.me/ALLUADDICT"),
                                                     InlineKeyboardButton(text="🤩YOUTUBE🤩", url="http://www.youtube.com/watch?v=nfWjbuQqgJc")]]),
     )
 
