@@ -16,7 +16,6 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 START_TEXT = """HI I AM  TELSA URL UPLOADER BOT,
 MADE BY @TELSABOTS
 """
-
 HELP_USER = """It's not that complicated to use meh! 😅
     
 1. Send Me A Tumbnail if required. It'll be saved permanently.💯
@@ -32,8 +31,7 @@ NB : It is Recommended To Use A Custom Thumbnail Because, Some Time Won't Upload
 Support Group : @TeleRoid14
 """
 
-
- ABOUT_TEXT = """<b>🤖 BOT🤖 : TELSA URL UPLOADER BOT</b>
+ABOUT_TEXT = """<b>🤖 BOT🤖 : TELSA URL UPLOADER BOT</b>
 <b>🧑🏼‍💻DEV 🧑🏼‍💻 : 👉 <a href='https://t.me/ALLUADDICT'> ꧁༒☬𝓗𝓑☬༒꧂ </a></b>
 <b> 📢CHANNEL📢 : 👉 <a href='https://t.me/TELSABOTS'> TELSA BOTS </a></b>"""
 START_BUTTONS = InlineKeyboardMarkup(
