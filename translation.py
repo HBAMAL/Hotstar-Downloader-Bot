@@ -1,6 +1,7 @@
 class Translation(object):
 
     START_TEXT = """<b>HI<b> {} 
+    
 <b>I AM TELSA URL UPLOADER BOT,<b>
     
 <b>MADE BY <b>@TELSABOTS
@@ -15,9 +16,10 @@ class Translation(object):
 
     ABOUT_TEXT = """<b>🤖 BOT🤖 : TELSA URL UPLOADER BOT</b>
 
-<b>🧑🏼‍💻DEV 🧑🏼‍💻 : 👉 <a href='https://t.me/ALLUADDICT'> ꧁༒☬𝓗𝓑☬༒꧂ </a></b>
+<b>🧑🏼‍💻DEV 🧑🏼‍💻 :  <a href='https://t.me/ALLUADDICT'> ꧁༒☬𝓗𝓑☬༒꧂ </a></b>
 
-<b> 📢CHANNEL📢 : 👉 <a href='https://t.me/TELSABOTS'> TELSA BOTS </a></b>"""
+<b> 📢CHANNEL📢 :  <a href='https://t.me/TELSABOTS'> TELSA BOTS </a></b>
+"""
 
 
 
