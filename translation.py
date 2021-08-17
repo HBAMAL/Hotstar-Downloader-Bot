@@ -49,7 +49,7 @@ class Translation(object):
 
     SLOW_URL_DECED = " This seems to be a very slow URL."
 
-    NO_VOID_FORMAT_FOUND = "ERROR...\n DUE TO  {}"
+    NO_VOID_FORMAT_FOUND = "ERROR..."
     
     SHOW_THUMB = "HERE IS UR 🖼THUMBNAIL"
     
