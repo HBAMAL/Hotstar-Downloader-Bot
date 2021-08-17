@@ -1,10 +1,7 @@
 class Translation(object):
 
-    START_TEXT = """Hҽʅʅσ 🙋‍♂️! I αɱ α Pσɯҽϝυʅ Hσƚʂƚαɾ URL Uρʅσαԃҽɾ Bσƚ 😎!
-I ƈαɳ ʂυρρσɾƚ Hσƚʂƚαɾ, Gσσɠʅҽ Dɾιʋҽ, αɳԃ ɱυƈԋ ɱσɾҽ Lιɳƙʂ😌!
-Sҽɳԃ Mҽ Aɳყ Dιɾҽƈƚ Dσɯɳʅσαԃ URL Lιɳƙ, I Cαɳ Uρʅσαԃ Tσ Tҽʅҽɠɾαɱ Aʂ Fιʅҽ/Vιԃҽσ!
-Aԃԃҽԃ Pҽɾɱαɳҽɳƚ TԋυɱႦɳαιʅ Sυρρσɾƚ💯😋!!
-Sυρρσɾƚ Gɾσυρ : @TeleRoid14
+    START_TEXT = """HI I AM  TELSA URL UPLOADER BOT,
+MADE BY @TELSABOTS
 """
 
     HELP_USER = """It's not that complicated to use meh! 😅
@@ -23,59 +20,43 @@ Support Group : @TeleRoid14
 """
 
 
-    ABOUT_TEXT = """<b>🤖 My Name : @TeleRoid_Hotstar_Bot</b>
+    ABOUT_TEXT = """<b>🤖 BOT🤖 : TELSA URL UPLOADER BOT</b>
 
-<b>👨‍💻 Creator : @PredatorHackerzZ_bot</b>
+<b>🧑🏼‍💻DEV 🧑🏼‍💻 : 👉 <a href='https://t.me/ALLUADDICT'> ꧁༒☬𝓗𝓑☬༒꧂ </a></b>
 
-<b>📝 Language : Python3</b>
-
-<b>📡 Server : <a href='https://www.heroku.com'> Heroku </a></b>
-
-<b>📔 Library : Pyrogram 1.0.7</b>
-
-<b>📌 Source Code : 👉 <a href='https://github.com/P-Phreak/URLuploader-With-Hotstar'>Click Here</a></b>
-
-<b>🛑 Discussion : 👉 <a href='https://t.me/TeleRoid14'> Support Group </a></b>
-
-<b>⭕ Updates : 👉 <a href='https://t.me/TeleRoidGroup'> Channel Group </a></b>
-
-<b>💎 Telegram Botlist : <a href='https://t.me/TGRobot_List'> TGRobot_List </a></b>"""
+<b> 📢CHANNEL📢 : 👉 <a href='https://t.me/TELSABOTS'> TELSA BOTS </a></b>"""
 
 
 
     FORMAT_SELECTION = """<b>Choose appropriate option</b> <a href='{}'>⬇️</a>
 🎞  - Stream format
 📁  - File format
-<i>NOTE : Taking high resolutions may result in files above 2GB and hence cannot Upload to TG. So better select a medium resolution.</i> 😇
-    
-Send your custum thumbnail if required.
-You can use /deletethumbnail to delete the auto-generated thumbnail."""
+<i>NOTE : Taking high resolutions may result in files above 2GB and hence cannot Upload to TG. So better select a medium resolution.</i>"""
     
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | newfilename | username | password"""
 
 
-    UPGRADE_TEXT = """<b>👉 If You Liked Our Bots @TheTeleRoid And Service Feel Free To Donate...Us 🥰</b>
-  If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@PredatorHackerzZ_bot...."""
+    UPGRADE_TEXT = """<b> This Service Is Feel Free To USE...🥰</b>"""
     
-    DOWNLOAD_START = "Trying to download to my Server, Wait For Some Time 😇\n\n@TheTeleRoid14"
+    DOWNLOAD_START = "TRYING TO DOWNLOAD \n\n@TELSABOTS"
     
-    UPLOAD_START = "Trying to upload.....📤"
+    UPLOAD_START = "<b>Trying to upload.....\n\n@TELSABOTS<b>"
     
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \n\nUploaded in {} seconds.\n\nFor TeleRoid Bots \n\nJoin : @TheTeleRoid and @TGRobot_List"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "<b>Downloaded in {} seconds<b>. \n\nUploaded in {} seconds<b>"
 
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nAre You Fool, I cannot upload files greater than 1.95GB due to Telegram API limitations."
+    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\n I cannot upload files greater than 1.95GB due to Telegram API limitations."
 
-    SAVED_CUSTOM_THUMB_NAIL = "Custom thumbnail saved✅. This will be permanent.\n\nUse /deletethumbnail to clear it."
+    SAVED_CUSTOM_THUMB_NAIL = "<b>🖼 Thumbnail ✅Saved<b>"
 
-    DEL_ETED_CUSTOM_THUMB_NAIL = "Custom thumbnail cleared succesfully.❎"
+    DEL_ETED_CUSTOM_THUMB_NAIL = "<b>🖼Thumbnail 🗑Deleted<b>"
 
     CUSTOM_CAPTION_UL_FILE = " "
 
-    SLOW_URL_DECED = "Fucking Fool! This seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
+    SLOW_URL_DECED = " This seems to be a very slow URL."
 
-    NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
+    NO_VOID_FORMAT_FOUND = "ERROR...\n DUE TO  {}"
     
-    SHOW_THUMB = "Use /deletethumbnail to clear this thumbnail."
+    SHOW_THUMB = "HERE IS UR 🖼THUMBNAIL"
     
-    NO_THUMB = "No saved thumbnails Found!!\n\nSend an image to save it as your thumbnail permanently."    
+    NO_THUMB = "😢NO THUMBNAIL FOUND😢."    
