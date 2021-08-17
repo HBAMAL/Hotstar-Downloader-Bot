@@ -24,8 +24,7 @@ class Translation(object):
 
 
     FORMAT_SELECTION = """<b>Choose appropriate option</b> <a href='{}'>⬇️</a>
-🎞  - Stream format
-📁  - File format
+    
 <i>NOTE : Taking high resolutions may result in files above 2GB and hence cannot Upload to TG. So better select a medium resolution.</i>"""
     
     SET_CUSTOM_USERNAME_PASSWORD = """"""
