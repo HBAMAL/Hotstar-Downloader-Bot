@@ -13,12 +13,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-START_TEXT = """Hҽʅʅ {}! I αɱ α Pσɯҽϝυʅ Hσƚʂƚαɾ URL Uρʅσαԃҽɾ Bσƚ 😎!
-I ƈαɳ ʂυρρσɾƚ Hσƚʂƚαɾ, Gσσɠʅҽ Dɾιʋҽ, αɳԃ ɱυƈԋ ɱσɾҽ Lιɳƙʂ😌!
-Sҽɳԃ Mҽ Aɳყ Dιɾҽƈƚ Dσɯɳʅσαԃ URL Lιɳƙ, I Cαɳ Uρʅσαԃ Tσ Tҽʅҽɠɾαɱ Aʂ Fιʅҽ/Vιԃҽσ!
-Aԃԃҽԃ Pҽɾɱαɳҽɳƚ TԋυɱႦɳαιʅ Sυρρσɾƚ💯😋!!
-Sυρρσɾƚ Gɾσυρ : @TeleRoid14
-"""
+START_TEXT = """Hҽʅʅ {}! I αɱ α Pσɯҽϝυʅ Hσƚʂƚαɾ URL Uρʅσαԃҽɾ Bσƚ 😎!"""
 
 HELP_TEXT = """</b>SENT ANY LINK.......</b>\nTHAT'S ALL........\n\n</b>MADE BY </b>@TELSABOTS
 """
