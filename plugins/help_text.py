@@ -13,7 +13,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-START_TEXT = """HI {}I AM  TELSA URL UPLOADER BOT,
+START_TEXT = """HI {},
+I AM @TELSA URL UPLOADER BOT
 
 MADE BY @TELSABOTS
 """
@@ -85,7 +86,7 @@ async def cb_data(bot, update):
     
 @Client.on_message(filters.command(["help"]))
 async def help_message(bot, update):
-    text = HELP_USER,
+    text = HELP_TEXT,
     reply_markup = HELP_BUTTONS
     await update.reply_text(
         text=text,
