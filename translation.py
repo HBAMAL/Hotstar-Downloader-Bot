@@ -23,9 +23,7 @@ class Translation(object):
 
 
 
-    FORMAT_SELECTION = """<b>Choose appropriate option</b> <a href='{}'>⬇️</a>
-    
-<i>NOTE : Taking high resolutions may result in files above 2GB and hence cannot Upload to TG. So better select a medium resolution.</i>"""
+    FORMAT_SELECTION = """<b>Choose appropriate option</b> <a href='{}'></a>"""
     
     SET_CUSTOM_USERNAME_PASSWORD = """"""
 
@@ -44,7 +42,7 @@ class Translation(object):
 
     DEL_ETED_CUSTOM_THUMB_NAIL = "<b>🖼Thumbnail 🗑Deleted<b>"
 
-    CUSTOM_CAPTION_UL_FILE = " "
+    CUSTOM_CAPTION_UL_FILE = "HB"
 
     SLOW_URL_DECED = " This seems to be a very slow URL."
 
