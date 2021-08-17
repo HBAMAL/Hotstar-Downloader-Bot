@@ -59,12 +59,12 @@ async def help_message(bot, update):
     
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    text=START_TEXT,
-    reply_markup = START_BUTTONS
+    text=Translation.START_TEXT,
     await update.reply_text(
         text=text,
         disable_web_page_preview=True,
         reply_markup=reply_markup
+        reply_markup = START_BUTTONS
     )
     
 @Client.on_message(filters.command(["about"]))
