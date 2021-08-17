@@ -48,7 +48,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
    
 @Client.on_message(filters.command(["help"]))
 async def help_message(bot, update):
-    text=HELP_TEXT,,
+    text=HELP_TEXT,
     reply_markup = HELP_BUTTONS
     await update.reply_text(
         text=text,
