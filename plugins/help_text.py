@@ -32,6 +32,17 @@ HELP_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
         ]]
     )
+  
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
+        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
+        ],[
+        InlineKeyboardButton('🏡HOME🏡', callback_data='home'),
+        InlineKeyboardButton('🆘HELP🆘', callback_data='help'), 
+        InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
+        ]]
+    )
 @Client.on_callback_query()
 async def cb_data(bot, update):
     if update.data == "home":
