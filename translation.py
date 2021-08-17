@@ -28,15 +28,14 @@ class Translation(object):
 📁  - File format
 <i>NOTE : Taking high resolutions may result in files above 2GB and hence cannot Upload to TG. So better select a medium resolution.</i>"""
     
-    SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
-URL | newfilename | username | password"""
+    SET_CUSTOM_USERNAME_PASSWORD = """"""
 
 
     UPGRADE_TEXT = """<b> This Service Is Feel Free To USE...🥰</b>"""
     
-    DOWNLOAD_START = "TRYING TO DOWNLOAD \n\n@TELSABOTS"
+    DOWNLOAD_START = "TRYING TO DOWNLOAD \n\n❤️ MADE BY @TELSABOTS ❤️"
     
-    UPLOAD_START = "<b>Trying to upload.....\n\n@TELSABOTS<b>"
+    UPLOAD_START = "<b>Trying to upload.....\n\n❤️ MADE BY @TELSABOTS ❤️<b>"
     
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "<b>Downloaded in {} seconds<b>. \n\nUploaded in {} seconds<b>"
 
