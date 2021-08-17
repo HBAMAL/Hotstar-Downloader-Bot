@@ -5,75 +5,53 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 
-
-from pyrogram import Client, filters
 from translation import Translation
 
+from pyrogram import Client, filters
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-START_TEXT = """Hҽʅʅ {}! I αɱ α Pσɯҽϝυʅ Hσƚʂƚαɾ URL Uρʅσαԃҽɾ Bσƚ 😎!"""
-
-HELP_TEXT = """</b>SENT ANY LINK.......</b>\nTHAT'S ALL........\n\n</b>MADE BY </b>@TELSABOTS
-"""
-
-ABOUT_TEXT = """🤖</b>BOT🤖 : TELSA MEDIA INFO BOT</b>\n📢</b>CHANNEL📢 :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS</a>\n🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT\n__🤩SOURCE🤩:__ [👉CLICK HERE👈](https://t.me/SOURCE_TELSA/7)
-"""
-START_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
-        ],[
-        InlineKeyboardButton('🤩YOUTUBE🤩', url='http://www.youtube.com/watch?v=nfWjbuQqgJc')
-        ]]
-    )
-
-HELP_BUTTONS = InlineKeyboardMarkup(
-       [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
-        ],[
-        InlineKeyboardButton('🤩YOUTUBE🤩', url='http://www.youtube.com/watch?v=nfWjbuQqgJc')
-        ]]
-    )
-ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
-        InlineKeyboardButton('🧑🏼‍💻DEV🧑🏼‍💻', url='https://telegram.me/alluaddict')
-        ],[
-        InlineKeyboardButton('🤩YOUTUBE🤩', url='http://www.youtube.com/watch?v=nfWjbuQqgJc')
-        ]]
-    )
-        
-   
 @Client.on_message(filters.command(["help"]))
-async def help_message(bot, update):
-    text=HELP_TEXT,
-    reply_markup = HELP_BUTTONS
-    await update.reply_text(
-        text=text,
+async def help_user(bot, update):
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.HELP_USER,
+        parse_mode="html",
         disable_web_page_preview=True,
-        reply_markup=reply_markup
-    )     
+        reply_to_message_id=update.message_id,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TeleRoidGroup")]]),
+   )
 
-    
+@Client.on_message(filters.command(["upgrade"]))
+async def upgrade(bot, update):
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.UPGRADE_TEXT,
+        parse_mode="html",
+        reply_to_message_id=update.message_id,
+        disable_web_page_preview=True
+    )
+
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    text=Translation.START_TEXT,
-    await update.reply_text(
-        text=text,
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.START_TEXT,
+        parse_mode="html",
         disable_web_page_preview=True,
-        reply_markup=reply_markup
-        reply_markup = START_BUTTONS
+        reply_to_message_id=update.message_id,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/TeleRoidGroup")], [InlineKeyboardButton(text="🛑 SUPPORT 🛑", url="https://t.me/TeleRoid14"),
+                                                    InlineKeyboardButton(text="About Meh👤", url="https://t.me/TheTeleRoid")]]),
     )
-    
+
 @Client.on_message(filters.command(["about"]))
-async def about_message(bot, update):
-    text=ABOUT_TEXT,
-    reply_markup = ABOUT_BUTTONS
-    await update.reply_text(
-        text=text,
-        disable_web_page_preview=True,
-        reply_markup=reply_markup
-    )     
+def about(bot, update):
     
+    bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.ABOUT_TEXT,
+        parse_mode="html",
+        reply_to_message_id=update.message_id,
+        disable_web_page_preview=True   
+    ) 
+        
