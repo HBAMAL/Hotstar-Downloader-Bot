@@ -42,13 +42,13 @@ async def cb_data(bot, update):
         )
     elif update.data == "help":
         await update.message.edit_text(
-            text=HELP_TEXT,
+            text=Translation.HELP_USER,
             disable_web_page_preview=True,
             reply_markup=HELP_BUTTONS
         )
     elif update.data == "about":
         await update.message.edit_text(
-            text=ABOUT_TEXT,
+            text=Translation.ABOUT_TEXT,
             disable_web_page_preview=True,
             reply_markup=ABOUT_BUTTONS
         )
@@ -81,13 +81,12 @@ async def start(bot, update):
     )
 
 @Client.on_message(filters.command(["about"]))
-def about(bot, update):
+async def about_message(bot, update):
+    text=Translation.ABOUT_TEXT,
+    reply_markup = ABOUT_BUTTONS
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+    )     
     
-    bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.ABOUT_TEXT,
-        parse_mode="html",
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True   
-    ) 
-        
