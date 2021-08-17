@@ -11,6 +11,31 @@ from pyrogram import Client, filters
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+
+
+START_TEXT = """HI I AM  TELSA URL UPLOADER BOT,
+MADE BY @TELSABOTS
+"""
+
+HELP_USER = """It's not that complicated to use meh! 😅
+    
+1. Send Me A Tumbnail if required. It'll be saved permanently.💯
+2. If Thumbnail Wasn't Set By You, It'll Be Auto Generated From The File.🥳
+3. Send Me Any Link To Be Uploaded To Telegram.
+4. Press /deletthumbnail To Delete Your Current Custom Thumbnail
+5. Select the button.
+   SVideo - Give File as video with Screenshots
+   DFile  - Give File with Screenshots
+   Video  - Give File as video without Screenshots
+   DFile  - Give File without Screenshots
+NB : It is Recommended To Use A Custom Thumbnail Because, Some Time Won't Upload The File Without a Custom Thumbnail.
+Support Group : @TeleRoid14
+"""
+
+
+ ABOUT_TEXT = """<b>🤖 BOT🤖 : TELSA URL UPLOADER BOT</b>
+<b>🧑🏼‍💻DEV 🧑🏼‍💻 : 👉 <a href='https://t.me/ALLUADDICT'> ꧁༒☬𝓗𝓑☬༒꧂ </a></b>
+<b> 📢CHANNEL📢 : 👉 <a href='https://t.me/TELSABOTS'> TELSA BOTS </a></b>"""
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
@@ -47,19 +72,19 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
 async def cb_data(bot, update):
     if update.data == "home":
         await update.message.edit_text(
-            text=START_TEXT.format(update.from_user.mention),
+            text = START_TEXT,
             disable_web_page_preview=True,
             reply_markup=START_BUTTONS
         )
     elif update.data == "help":
         await update.message.edit_text(
-            text=Translation.HELP_USER,
+            text = HELP_USER,
             disable_web_page_preview=True,
             reply_markup=HELP_BUTTONS
         )
     elif update.data == "about":
         await update.message.edit_text(
-            text=Translation.ABOUT_TEXT,
+            text = ABOUT_TEXT,
             disable_web_page_preview=True,
             reply_markup=ABOUT_BUTTONS
         )
@@ -70,7 +95,7 @@ async def cb_data(bot, update):
     
 @Client.on_message(filters.command(["help"]))
 async def help_message(bot, update):
-    text=Translation.HELP_USER,
+    text = HELP_USER,
     reply_markup = HELP_BUTTONS
     await update.reply_text(
         text=text,
@@ -81,7 +106,7 @@ async def help_message(bot, update):
     
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    text=Translation.START_TEXT,
+    text = START_TEXT,
     reply_markup = START_BUTTONS
     await update.reply_text(
         text=text,
@@ -91,7 +116,7 @@ async def start(bot, update):
     
 @Client.on_message(filters.command(["about"]))
 async def about_message(bot, update):
-    text=Translation.ABOUT_TEXT,
+    text = ABOUT_TEXT,
     reply_markup = ABOUT_BUTTONS
     await update.reply_text(
         text=text,
