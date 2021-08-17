@@ -78,19 +78,17 @@ async def help_message(bot, update):
         reply_markup=reply_markup
     )     
 
-
+    
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.START_TEXT,
-        parse_mode="html",
+    text=Translation.START_TEXT,
+    reply_markup = START_BUTTONS
+    await update.reply_text(
+        text=text,
         disable_web_page_preview=True,
-        reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/telsabots")], [InlineKeyboardButton(text="DEV", url="https://t.me/alluaddict"),
-                                                    InlineKeyboardButton(text="About Meh👤", url="https://t.me/TheTeleRoid")]]),
+        reply_markup=reply_markup
     )
-
+    
 @Client.on_message(filters.command(["about"]))
 async def about_message(bot, update):
     text=Translation.ABOUT_TEXT,
