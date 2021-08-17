@@ -13,26 +13,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-START_TEXT = """HI {},
-I AM @TELSA URL UPLOADER BOT
-
-MADE BY @TELSABOTS
+START_TEXT = """HI {},\nI AM A URL UPLOADER BOT\nMADE BY @TELSABOTS
 """
 
-HELP_TEXT = """
-</b>SENT ANY LINK.......</b>
-
-THAT'S ALL........
-
-</b>MADE BY </b>@TELSABOTS
+HELP_TEXT = """</b>SENT ANY LINK.......</b>\nTHAT'S ALL........\n\n</b>MADE BY </b>@TELSABOTS
 """
 
-ABOUT_TEXT = """
-🤖</b>BOT🤖 : TELSA MEDIA INFO BOT</b>
- 
-📢</b>CHANNEL📢 :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS</a>
-🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
-__🤩SOURCE🤩:__ [👉CLICK HERE👈](https://t.me/SOURCE_TELSA/7)
+ABOUT_TEXT = """🤖</b>BOT🤖 : TELSA MEDIA INFO BOT</b>\n📢</b>CHANNEL📢 :</b> ❤️ <a href='https://t.me/telsabots'>TELSA BOTS</a>\n🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT\n__🤩SOURCE🤩:__ [👉CLICK HERE👈](https://t.me/SOURCE_TELSA/7)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
