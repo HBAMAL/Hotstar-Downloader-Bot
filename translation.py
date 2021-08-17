@@ -1,22 +1,15 @@
 class Translation(object):
 
-    START_TEXT = """HI I AM  TELSA URL UPLOADER BOT,
-MADE BY @TELSABOTS
+    START_TEXT = """<b>HI<b> {} 
+<b>I AM TELSA URL UPLOADER BOT,<b>
+    
+<b>MADE BY <b>@TELSABOTS
 """
 
-    HELP_USER = """It's not that complicated to use meh! 😅
+    HELP_USER = """<b>SENT ANY LINK  <b>
+<b>THAT's ALL.....<b>
     
-1. Send Me A Tumbnail if required. It'll be saved permanently.💯
-2. If Thumbnail Wasn't Set By You, It'll Be Auto Generated From The File.🥳
-3. Send Me Any Link To Be Uploaded To Telegram.
-4. Press /deletthumbnail To Delete Your Current Custom Thumbnail
-5. Select the button.
-   SVideo - Give File as video with Screenshots
-   DFile  - Give File with Screenshots
-   Video  - Give File as video without Screenshots
-   DFile  - Give File without Screenshots
-NB : It is Recommended To Use A Custom Thumbnail Because, Some Time Won't Upload The File Without a Custom Thumbnail.
-Support Group : @TeleRoid14
+<b>MADE BY @TELSABOTS <b> 
 """
 
 
