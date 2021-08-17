@@ -2,7 +2,7 @@ class Translation(object):
 
     START_TEXT = """<b>HI<b> {} 
     
-<b>I AM TELSA URL UPLOADER BOT,<b>
+<b>I AM TELSA URL UPLOADER BOT<b>
     
 <b>MADE BY <b>@TELSABOTS
 """
