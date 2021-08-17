@@ -33,7 +33,7 @@ async def echo(bot, update):
             revoke=True
         )
         return
-    intmsg = await update.reply_text("WAIT I NEED TO CHECK \n@TELSABOTS...", quote=True)   
+    intmsg = await update.reply_text("</b>WAIT I NEED TO CHECK</b> \n\n❤️ MADE BY @TELSABOTS ❤️", quote=True)   
     url = update.text
     youtube_dl_username = None
     youtube_dl_password = None
